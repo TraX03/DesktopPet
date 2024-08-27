@@ -1,2 +1,2 @@
 # DesktopPet
- PRG2104 Object Oriented Programming (OOP) Final Project
+This repository primarily contains files related to the PRG2104 Object Oriented Programming (OOP) final project, completed during my enrollment in the BSc (Hons) in Computer Science program at Sunway University. This project involves developing a standalone GUI application using Scala and ScalaFX, showcasing object-oriented programming principles such as inheritance and polymorphism. The task is to design and implement a system that includes at least four essential functionalities relevant to the chosen application type.
