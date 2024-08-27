@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="659.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.desktopPet.view.InventoryController">
+   <children>
+      <VBox prefHeight="409.0" prefWidth="549.0">
+         <StackPane.margin>
+            <Insets bottom="30.0" left="55.0" right="55.0" top="66.0" />
+         </StackPane.margin>
+         <children>
+            <Label styleClass="header" text="Inventory">
+               <font>
+                  <Font size="56.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Label>
+            <HBox alignment="BOTTOM_LEFT" prefHeight="0.0" prefWidth="549.0">
+               <children>
+                  <Button fx:id="foodButton" mnemonicParsing="false" prefWidth="100.0" text="Food">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button fx:id="toyButton" mnemonicParsing="false" prefWidth="100.0" text="Toys">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+               </children>
+            </HBox>
+            <ScrollPane fx:id="bagPane" hbarPolicy="NEVER" prefHeight="359.0" prefWidth="549.0" style="-fx-background: #a0c7e9;">
+               <content>
+                  <FlowPane fx:id="inventoryPane" maxWidth="1.7976931348623157E308" minWidth="549.0" prefHeight="200.0" prefWidth="200.0" />
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+      <ImageView fx:id="decoOne" fitHeight="164.0" fitWidth="213.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="TOP_RIGHT">
+         <StackPane.margin>
+            <Insets right="10.0" top="10.0" />
+         </StackPane.margin></ImageView>
+      <AnchorPane fx:id="refreshPane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: white; -fx-background-radius: 10;" StackPane.alignment="TOP_RIGHT">
+         <StackPane.margin>
+            <Insets right="55.0" top="110.0" />
+         </StackPane.margin>
+         <children>
+            <ImageView fx:id="refreshIcon" fitHeight="30.0" fitWidth="30.0" layoutX="25.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </AnchorPane>
+   </children>
+</StackPane>

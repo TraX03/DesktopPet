@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="659.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.desktopPet.view.StatusController">
+   <right>
+      <StackPane alignment="TOP_RIGHT" prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="blobDeco" fitHeight="388.0" fitWidth="426.0" nodeOrientation="INHERIT" pickOnBounds="true" />
+            <StackPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: WHITE;">
+               <children>
+                  <ImageView fx:id="profilePic" fitHeight="180.0" fitWidth="180.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" />
+               </children>
+               <StackPane.margin>
+                  <Insets right="80.0" top="100.0" />
+               </StackPane.margin>
+            </StackPane>
+            <Button id="statusButton" fx:id="switchPet" mnemonicParsing="false" prefHeight="48.0" prefWidth="246.0" text="Switch Companion" textFill="WHITE" StackPane.alignment="BOTTOM_RIGHT">
+               <StackPane.margin>
+                  <Insets bottom="50.0" right="40.0" />
+               </StackPane.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </StackPane>
+   </right>
+   <left>
+      <StackPane prefHeight="150.0" prefWidth="355.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="530.0" prefWidth="289.0">
+               <children>
+                  <Label styleClass="header" text="Status">
+                     <font>
+                        <Font size="56.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="25.0" />
+                     </VBox.margin>
+                  </Label>
+                  <GridPane styleClass="status">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="60.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="60.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="60.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="60.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="60.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label text="PetID:" textFill="#7e99b2">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Name:" textFill="#7e99b2" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Mood:" textFill="#7e99b2" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Hunger:" textFill="#7e99b2" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Behaviour:" textFill="#7e99b2" GridPane.rowIndex="4">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="idLabel" text="null" GridPane.columnIndex="1">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="nameLabel" text="null" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="moodLabel" text="null" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="hungerLabel" text="null" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="behaviorLabel" text="null" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </GridPane>
+               </children>
+               <StackPane.margin>
+                  <Insets left="55.0" top="66.0" />
+               </StackPane.margin>
+            </VBox>
+            <ImageView fx:id="statusDeco" fitHeight="189.0" fitWidth="290.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="BOTTOM_CENTER" />
+         </children>
+      </StackPane>
+   </left>
+</BorderPane>

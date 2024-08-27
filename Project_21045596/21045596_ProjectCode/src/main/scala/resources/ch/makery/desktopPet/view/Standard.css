@@ -1,0 +1,158 @@
+.moneySection, .label, #statusButton, .activeButton, .inactiveButton, .inventoryActive, .inventoryInactive {
+    -fx-font-family: 'Sniglet';
+}
+
+.split-pane:horizontal .split-pane-divider {
+    -fx-padding: 0;
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+}
+
+.menuHover:hover, #statusButton:hover {
+    -fx-background-color: #afe6fa;
+}
+
+.menu {
+    -fx-font-family: 'Roboto Condensed SemiBold';
+    -fx-font-size: 22px;
+}
+
+.activeMenu {
+    -fx-background-color: white;
+    -fx-padding: 0 0 0 15;
+}
+
+.activeMenu .label{
+    -fx-text-fill: black;
+    -fx-background-color: transparent;
+}
+
+.table-view {
+    -fx-font-size: 15px;
+    -fx-font-family: 'Arial'
+}
+
+.table-view .column-header {
+    -fx-background-color: #99c9ea;
+    -fx-text-fill: white;
+    -fx-pref-height: 30px;
+}
+
+.table-view .column-header .label{
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+}
+
+.status {
+    -fx-font-size: 24px;
+}
+
+.header {
+    -fx-font-family: 'Marykate';
+    -fx-font-size: 70px;
+}
+
+.inactiveButton, .activeButton {
+    -fx-font-size: 20px;
+    -fx-background-radius: 50px;
+    -fx-text-fill: white;
+    -fx-min-width: 60px;
+    -fx-pref-height: 24px;
+}
+
+.inactiveButton{
+    -fx-background-color: #a2c6e9;
+}
+
+.activeButton, .inventoryActive{
+    -fx-background-color: #fbe6ab;
+    -fx-text-fill: black;
+}
+
+.inventoryActive, .inventoryInactive {
+    -fx-font-size: 18px;
+    -fx-background-radius: 10 10 0 0;
+    -fx-pref-width: 150px;
+}
+
+.inventoryInactive {
+    -fx-background-color: #7e99b2;
+    -fx-text-fill: white;
+    -fx-min-height: 20px;
+}
+
+.inventoryActive {
+    -fx-min-height:48px;
+}
+
+.buyButton {
+    -fx-background-color: #a2c6e9;
+    -fx-text-fill: white;
+    -fx-background-radius: 10px;
+    -fx-pref-width: 60px;
+    -fx-pref-height: 24px;
+    -fx-font-size: 18px;
+    -fx-cursor: Hand;
+}
+
+.buyButton:hover {
+    -fx-background-color: #afe6fa;
+}
+
+#statusButton {
+    -fx-background-color: #a2c6e9;
+    -fx-background-radius: 50px;
+    -fx-font-size: 22px;
+}
+
+#noItemLabel {
+    -fx-font-size: 20px;
+    -fx-text-fill: black;
+    -fx-padding: 150 0 0 180;
+}
+
+#itemNameLabel {
+    -fx-background-color: rgba(0, 0, 0, 0.7);
+    -fx-text-fill: white;
+    -fx-padding: 5px;
+    -fx-font-size: 12px;
+    -fx-background-radius: 5px;
+    -fx-wrap-text: true;
+    -fx-text-alignment: Left;
+    -fx-max-width: 100px;
+    -fx-min-height: 50px;
+}
+
+#quantityLabel {
+    -fx-background-color: #fef4c7;
+    -fx-text-fill: black;
+    -fx-font-size: 16px;
+    -fx-border-color: #7e99b2;
+    -fx-border-width: 2 0 2 0;
+    -fx-border-style: solid;
+    -fx-alignment: Center;
+    -fx-padding: 3px;
+}
+
+#itemPane {
+    -fx-background-color: #e3fafd;
+    -fx-border-color: #7e99b2;
+    -fx-border-width: 2px;
+    -fx-border-style: solid;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-min-width: 110px;
+    -fx-max-width: 110px;
+    -fx-min-height: 130px;
+    -fx-max-height: 130px;
+}
+
+#itemPane:hover {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.8), 10, 0, 0, 0);
+}
+
+#imageHolder {
+    -fx-alignment: Center;
+    -fx-min-height: 50px;
+    -fx-max-height: 50px;
+}

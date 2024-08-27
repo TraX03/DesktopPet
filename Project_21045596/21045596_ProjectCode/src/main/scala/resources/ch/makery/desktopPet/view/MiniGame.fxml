@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="gamePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="659.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.desktopPet.view.MiniGameController">
+    <children>
+      <VBox layoutX="55.0" layoutY="45.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="510.0" prefWidth="549.0" AnchorPane.bottomAnchor="45.0" AnchorPane.leftAnchor="55.0" AnchorPane.rightAnchor="55.0" AnchorPane.topAnchor="45.0">
+         <children>
+            <Label alignment="TOP_LEFT" style="-fx-background-color: white;" styleClass="header" text="Mini Games">
+               <font>
+                  <Font size="62.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Label>
+              <GridPane alignment="CENTER" prefHeight="480.0" prefWidth="549.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+                  <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  </columnConstraints>
+                  <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  </rowConstraints>
+                  <children>
+                      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="130.0" prefWidth="130.0" style="-fx-background-color: #e3fafd; -fx-background-radius: 20; -fx-border-color: #7e99b2; -fx-border-radius: 20;" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                          <children>
+                              <BorderPane layoutX="15.0" layoutY="17.0" prefHeight="130.0" prefWidth="130.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="17.0">
+                                  <center>
+                                      <ImageView fx:id="gameOne" fitHeight="130.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                                  </center>
+                              </BorderPane>
+                          </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                      </AnchorPane>
+                  <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="164.0" prefWidth="161.0" style="-fx-background-color: #e3fafd; -fx-background-radius: 20; -fx-border-color: #7e99b2; -fx-border-radius: 20;" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <children>
+                        <BorderPane layoutX="16.0" layoutY="17.0" prefHeight="130.0" prefWidth="130.0">
+                           <center>
+                              <ImageView fx:id="gameTwo" fitHeight="130.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                           </center>
+                        </BorderPane>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </AnchorPane>
+                  <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="164.0" prefWidth="161.0" style="-fx-background-color: white; -fx-background-radius: 20; -fx-border-color: #7e99b2; -fx-border-radius: 20;" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                     <children>
+                        <BorderPane layoutX="15.0" layoutY="17.0" prefHeight="140.0" prefWidth="140.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="17.0">
+                           <center>
+                                      <Label text="Coming Soon" BorderPane.alignment="CENTER">
+                                          <font>
+                                              <Font size="19.0" />
+                                          </font>
+                                      </Label>
+                           </center>
+                        </BorderPane>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </AnchorPane>
+                  </children>
+                  <padding>
+                      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                  </padding>
+              </GridPane>
+         </children>
+      </VBox>
+    </children>
+</AnchorPane>
