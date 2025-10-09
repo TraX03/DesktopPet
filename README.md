@@ -1,2 +1,7 @@
 # DesktopPet
-This repository primarily contains files related to the PRG2104 Object Oriented Programming (OOP) final project, completed during my enrollment in the BSc (Hons) in Computer Science program at Sunway University using IntelliJ IDEA. This project involves developing a standalone GUI application using Scala and ScalaFX, showcasing object-oriented programming principles such as inheritance and polymorphism. The task is to design and implement a system with at least four essential functionalities relevant to the chosen application type.
+This repository contains the source code and related files for the PRG2104 Object-Oriented Programming (OOP) Final Project, completed as part of the BSc (Hons) in Computer Science program at Sunway University.
+Developed in Scala using ScalaFX within IntelliJ IDEA, this standalone desktop application demonstrates key object-oriented programming principles such as inheritance, encapsulation, and polymorphism. DesktopPet is an interactive virtual pet system that allows users to care for and interact with a digital companion.
+
+## Demonstration
+A short demonstration video of the project is available here:<br>
+https://youtu.be/bDFJ0Z5hET4
